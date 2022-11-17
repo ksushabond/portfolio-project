@@ -1,46 +1,122 @@
 /* font-family: 'Playfair Display', serif;
 font-family: 'Poppins', sans-serif;
-font-family: 'Prompt', sans-serif; */
+font-family: 'Prompt', sans-serif; 
+ color: rgb(76, 74, 74);*/
+
 :root {
-  --branding-color: #97cba9;
-  --secondary-color: #feffdf;
+  --branding-color: #42a7b2;
+  --secondary-color: #fcf1f5;
+  --heading-colop: #77628c;
   --heading-font-family: "Poppins", sans-serif;
   --default-font-famil: "Pappins", sans-serif;
 }
 body {
   font-family: var(--default-font-famil);
+  background-color: var(--secondary-color);
 }
 h1,
+h2,
 h3,
 h4,
 h5 {
   font-weight: bold;
 }
 h1 {
-  font-size: 96px;
-  font-weight: bold;
-}
-.hero h2 {
-  color: gray;
-
-  line-height: 2;
-}
-p {
-  font-weight: normal;
+  font-size: 80px;
+  color: rgb(76, 74, 74);
 }
 .hero {
-  background-color: var(--secondary-color);
-  text-align: center;
-  padding: 160px 20px;
+  padding: 140px 60px 60px;
 }
 .hero p {
   font-size: 30px;
 }
+.hero h2 {
+  color: var(--heading-colop);
+  font-size: 36px;
+  letter-spacing: 0.1em;
+  line-height: 2;
+}
+
+.navigation-link {
+  text-align: right;
+}
 .btn-branding {
-  border-radius: 30px;
+  border-radius: 10px;
   background-color: var(--branding-color);
-  color: #668ba4;
-  font-size: 18px;
+  color: var(--secondary-color);
+  font-size: 30px;
   line-height: 27px;
-  padding: 20px;
+  padding: 15px 35px;
+}
+.btn-branding-outline {
+  border-radius: 10px;
+  border: 1px solid var(--branding-color);
+  background-color: var(--secondary-color);
+  color: var(--branding-color);
+  font-size: 24px;
+  line-height: 27px;
+  padding: 15px 35px;
+}
+.wreapper {
+  margin-left: 60px;
+}
+h3 {
+  font-size: 28px;
+}
+p {
+  font-weight: normal;
+  line-height: 30px;
+  font-size: 18px;
+}
+.project-description {
+  padding: 90px 60px;
+}
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 66px;
+  }
+  .hero {
+    padding: 80px 40px 40px;
+  }
+  .hero h2 {
+    font-size: 28px;
+    letter-spacing: normal;
+    line-height: 1.5;
+  }
+  .wreapper {
+    margin-bottom: 60px;
+    margin-left: 0;
+  }
+  .project-description {
+    text-align: center;
+    padding: 0;
+  }
+}
+@media (max-width: 576px) {
+  .hero {
+    padding: 60px 10px 20px;
+  }
+
+  h1 {
+    font-size: 36px;
+    text-align: center;
+  }
+  .hero h2 {
+    font-size: 22px;
+    text-align: center;
+    line-height: 1.5;
+  }
+  .hero p,
+  .navigation-link {
+    text-align: center;
+  }
+  .btn-branding {
+    font-size: 24px;
+    padding: 10px 30px;
+  }
+  h3 {
+    font-size: 24px;
+  }
 }
