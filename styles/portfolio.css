@@ -1,13 +1,17 @@
 /* font-family: 'Playfair Display', serif;
 font-family: 'Poppins', sans-serif;
 font-family: 'Prompt', sans-serif; 
- color: rgb(76, 74, 74);*/
-
-:root {
-  --branding-color: #42a7b2;
+ color: rgb(76, 74, 74);
+ --branding-color: #42a7b2;
   --secondary-color: #fcf1f5;
   --heading-color: #77628c;
-  --heading-font-family: "Poppins", sans-serif;
+ */
+
+:root {
+  --branding-color: #ff8364;
+  --secondary-color: #edf7fa;
+  --heading-color: #5f6caf;
+
   --default-font-famil: "Poppins", sans-serif;
 }
 body {
@@ -15,26 +19,65 @@ body {
   background-color: var(--secondary-color);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-weight: bold;
-}
 h1 {
   font-size: 80px;
-  color: rgb(76, 74, 74);
+  color: rgb(83, 83, 85);
 }
-.hero {
-  padding: 100px 60px 60px;
+.hero h1 {
+  font-size: 88px;
+}
+h2 {
+  color: var(--heading-color);
+  font-size: 38px;
+  line-height: 2;
+}
+.subtitle {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+h3 {
+  font-size: 28px;
+}
+h4 {
+  font-size: 18px;
 }
 
-.hero h2 {
-  color: var(--heading-color);
-  font-size: 36px;
-  letter-spacing: 0.1em;
-  line-height: 2;
+p {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.hero {
+  padding: 80px 60px 60px;
+}
+.hero p {
+  font-size: 24px;
+}
+
+.content-container {
+  padding: 120px 60px;
+}
+
+.content {
+  margin: 40px;
+}
+.content h3 {
+  line-height: 1.5;
+  margin: 20px 0 0;
+}
+.wreapper {
+  margin-left: 60px;
+}
+.weather-wrapper {
+  border: solid 1px #ffb677;
+  padding: 100px 2px 185px 2px;
+}
+.project-wrapper {
+  border: solid 1px #ffb677;
+  padding: 2px;
+}
+.project-description {
+  padding: 90px 60px;
 }
 
 .navigation-link {
@@ -48,6 +91,11 @@ h1 {
   line-height: 27px;
   padding: 15px 35px;
 }
+.btn-branding:hover {
+  background-color: var(--branding-color);
+  opacity: 60%;
+  color: var(--secondary-color);
+}
 .btn-branding-outline {
   border-radius: 10px;
   border: 1px solid var(--branding-color);
@@ -57,22 +105,10 @@ h1 {
   line-height: 27px;
   padding: 15px 35px;
 }
-.wreapper {
-  margin-left: 60px;
-}
-h3 {
-  font-size: 28px;
-}
-.contact-box h4 {
-  font-size: 20px;
-}
-p {
-  font-weight: normal;
-  line-height: 30px;
-  font-size: 18px;
-}
-.project-description {
-  padding: 90px 60px;
+.btn-branding-outline:hover {
+  background-color: var(--branding-color);
+  opacity: 60%;
+  color: var(--secondary-color);
 }
 .logo {
   max-width: 150px;
@@ -104,17 +140,7 @@ nav a:hover,
 nav li.active a {
   color: var(--heading-color);
 }
-.content-container {
-  padding: 120px 60px;
-}
 
-.content {
-  margin: 40px;
-}
-.content h3 {
-  line-height: 1.5;
-  margin: 20px 0 0;
-}
 footer {
   margin: 60px 0;
 }
@@ -138,7 +164,6 @@ footer .contact-box p {
 footer .email-link {
   text-decoration: none;
   color: black;
-
   font-size: 24px;
 }
 footer .email-link:hover {
@@ -146,29 +171,33 @@ footer .email-link:hover {
 }
 footer .social-links a {
   margin: 0 15px;
-  color: var(--branding-color);
+  color: var(--heading-color);
   font-size: 28px;
 }
 footer .social-links a:hover {
   color: var(--branding-color);
-  opacity: 40%;
+  opacity: 60%;
   transition: all 100ms ease-in-out;
 }
-@media (max-width: 900px) {
-  h1 {
-    font-size: 66px;
+@media (max-width: 920px) {
+  h1,
+  .hero h1 {
+    font-size: 64px;
   }
   .hero {
     padding: 80px 40px 40px;
   }
-  .hero h2 {
+  h2 {
     font-size: 28px;
-    letter-spacing: normal;
     line-height: 1.5;
   }
   .wreapper {
     margin-bottom: 60px;
     margin-left: 0;
+  }
+  .weather-wrapper {
+    padding: 2px;
+    margin-top: 30px;
   }
   .project-description {
     text-align: center;
@@ -179,24 +208,26 @@ footer .social-links a:hover {
     text-align: center;
     padding: 60px 0 0 0;
   }
-
-  .content-container h1 {
-    font-size: 60px;
-  }
 }
 @media (max-width: 576px) {
   .hero {
     padding: 30px 10px 20px;
   }
-  .hero h1,
-  .content-container h1 {
+  h1,
+  .hero h1 {
     font-size: 32px;
     text-align: center;
   }
-  .hero h2 {
+  h2 {
     font-size: 22px;
     text-align: center;
     line-height: 1.5;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  p {
+    font-size: 14px;
   }
   .hero p,
   .navigation-link {
@@ -214,7 +245,7 @@ footer .social-links a:hover {
     padding: 0 10px 10px;
   }
 
-  .content-container p {
+  .content-containe p {
     font-size: 16px;
   }
   nav a {
@@ -236,12 +267,7 @@ footer .email-link {
   .hero h2 {
     font-size: 20px;
   }
-  h3 {
-    font-size: 18px;
-  }
-  p {
-    font-size: 14px;
-  }
+
   .btn-branding,
   .btn-branding-outline {
     font-size: 16px;
@@ -249,12 +275,7 @@ footer .email-link {
   .content-container h1 {
     font-size: 28px;
   }
-  .content-container h3 {
-    font-size: 20px;
-  }
-  .content-container p {
-    font-size: 14px;
-  }
+
   footer .email-link {
     font-size: 16px;
   }
