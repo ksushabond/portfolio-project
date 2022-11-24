@@ -73,7 +73,36 @@ p {
 .project-description {
   padding: 90px 60px;
 }
+.logo {
+  max-width: 150px;
+}
+.logo-small {
+  max-width: 50px;
+}
+nav {
+  padding: 20px 0;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 42px;
+  margin-left: 15px;
+}
+nav a {
+  text-decoration: none;
+  color: var(--branding-color);
+  transition: all 150ms ease-in-out;
+  font-size: 20px;
+}
 
+nav a:hover,
+nav li.active a {
+  color: var(--heading-colop);
+}
 .content-container {
   padding: 120px 60px;
 }
