@@ -35,10 +35,7 @@ h2 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 h3 {
-  font-size: 28px;
-}
-h4 {
-  font-size: 18px;
+  font-size: 30px;
 }
 
 p {
@@ -55,7 +52,7 @@ p {
 }
 
 .content-container {
-  padding: 120px 60px;
+  padding: 60px 60px;
 }
 
 .content {
@@ -69,11 +66,12 @@ p {
   margin-left: 60px;
 }
 .weather-wrapper {
-  border: solid 1px #ffb677;
+  border: solid 1px #fceee2;
   padding: 100px 2px 185px 2px;
+  background-color: #fceee2;
 }
 .project-wrapper {
-  border: solid 1px #ffb677;
+  border: solid 1px #fceee2;
   padding: 2px;
 }
 .project-description {
