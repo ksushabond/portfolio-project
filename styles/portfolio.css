@@ -8,9 +8,9 @@ font-family: 'Prompt', sans-serif;
  */
 
 :root {
-  --branding-color: #ff8364;
-  --secondary-color: #edf7fa;
-  --heading-color: #5f6caf;
+  --branding-color: #b23850;
+  --secondary-color: #c4dbf6;
+  --heading-color: #3b8beb;
 
   --default-font-famil: "Poppins", sans-serif;
 }
@@ -38,10 +38,16 @@ h3 {
   font-size: 30px;
 }
 
-p {
+p,
+section {
   font-weight: normal;
   font-size: 18px;
   line-height: 30px;
+}
+section {
+  background-color: #d6e8fd;
+  padding: 17px;
+  border-radius: 20px;
 }
 
 .hero {
