@@ -206,6 +206,10 @@ footer .social-links a:hover {
     text-align: center;
     padding: 60px 0 0 0;
   }
+
+  .dict-project-wrapper img {
+    margin-top: 35px;
+  }
 }
 @media (max-width: 576px) {
   .hero {
@@ -249,15 +253,11 @@ footer .social-links a:hover {
   nav a {
     font-size: 18px;
   }
-}
-.dict-project-wrapper img {
-  margin-top: 35px;
-}
 
-footer .email-link {
-  font-size: 18px;
+  footer .email-link {
+    font-size: 18px;
+  }
 }
-
 @media (max-width: 360px) {
   nav a {
     font-size: 10px;
