@@ -250,6 +250,9 @@ footer .social-links a:hover {
     font-size: 18px;
   }
 }
+.dict-project-wrapper img {
+  margin-top: 35px;
+}
 
 footer .email-link {
   font-size: 18px;
