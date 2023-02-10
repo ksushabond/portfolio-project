@@ -56,7 +56,9 @@ img {
   border-radius: 10px;
 }
 .hero {
-  padding: 80px 60px 60px;
+  padding: 80px 60px 30px;
+  border-bottom: dashed 3px #ececec;
+  margin-bottom: 39px;
 }
 .hero p {
   font-size: 24px;
@@ -77,12 +79,12 @@ img {
   margin-left: 60px;
 }
 .weather-wrapper {
-  border: solid 1px #fceee2;
+  border: solid 1px #ececec;
   padding: 100px 2px 185px 2px;
-  background-color: #fceee2;
+  background-color: #ececec;
 }
 .project-wrapper {
-  border: solid 1px #fceee2;
+  border: solid 1px #ececec;
   padding: 2px;
 }
 .project-description {
